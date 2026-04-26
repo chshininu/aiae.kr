@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vite",
-    "build": "vite build && copy \"dist\\public\\index.html\" \"dist\\public\\404.html\"",
+    "build": "vite build && copyfiles -f dist/public/index.html dist/public/404.html",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "npm run build && git push"
@@ -32,6 +32,7 @@
   "devDependencies": {
     "@tailwindcss/vite": "^4.2.4",
     "@vitejs/plugin-react": "^6.0.1",
+    "copyfiles": "^2.4.1",
     "gh-pages": "^6.3.0",
     "typescript": "^6.0.3",
     "vite": "^8.0.10"
