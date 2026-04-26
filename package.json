@@ -6,10 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && cp ./dist/public/index.html ./dist/public/404.html",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist/public"
+    "deploy": "npm run build && git push"
   },
   "homepage": "https://chshininu.github.io/aiae.kr",
   "keywords": [],
