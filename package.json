@@ -7,8 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
+  "homepage": "https://chshininu.github.io/aiae.kr",
   "keywords": [],
   "author": "",
   "license": "ISC",
