@@ -51,9 +51,9 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3 text-sm text-muted-foreground">
                 <Globe className="w-5 h-5 text-primary shrink-0" />
-                <a href="https://aiae.kr" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
-                  aiae.kr
-                </a>
+<a href="/" className="hover:text-primary transition-colors">
+  aiae.kr
+</a>
               </li>
             </ul>
           </div>

@@ -21,7 +21,7 @@ function App() {
       <TooltipProvider>
         <Toaster />
         {/* Router에 base 경로 추가 */}
-        <Router base="/aiae.kr">
+        <Router base="/">
           <Routes />
         </Router>
       </TooltipProvider>
