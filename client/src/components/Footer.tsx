@@ -45,15 +45,23 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3 text-sm text-muted-foreground">
                 <Mail className="w-5 h-5 text-primary shrink-0" />
-                <a href="mailto:chshin@inu.ac.kr" className="hover:text-primary transition-colors">
-                  chshin@inu.ac.kr
+                <a 
+                  href="#" 
+                  onClick={(e) => {
+                    e.preventDefault();
+                    // 스팸 봇 수집 방지를 위해 자바스크립트로 이메일 주소 조합
+                    window.location.href = `mailto:chshin` + `@` + `inu.ac.kr`;
+                  }}
+                  className="hover:text-primary transition-colors"
+                >
+                  chshin<span style={{ display: 'none' }}>bot-block</span>@inu.ac.kr
                 </a>
               </li>
               <li className="flex items-center gap-3 text-sm text-muted-foreground">
                 <Globe className="w-5 h-5 text-primary shrink-0" />
-<a href="/" className="hover:text-primary transition-colors">
-  aiae.kr
-</a>
+                <a href="https://aiae.kr" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+                  aiae.kr
+                </a>
               </li>
             </ul>
           </div>
