@@ -6,51 +6,51 @@ import cfdEquationImg from "@/assets/images/theme-cfd-equation.png";
 const CATEGORIES = ["All", "Fundamental Flow Physics", "AI & Digital Twin Applications", "Engineering Projects"];
 
 const PUBLICATIONS = [
-  // Fundamental Flow Physics
+  // AI & Digital Twin Applications
   {
     id: 1,
+    title: "A numerical investigation of hydrogen blending effects on pressure regulators and compressors in natural gas pipeline networks",
+    authors: "Park, C. J., Ji, S. J., Lee, Y., Shin, C. H., Park, S. G.",
+    journal: "International Journal of Hydrogen Energy (Q1)",
+    year: 2026,
+    category: "AI & Digital Twin Applications",
+    link: "https://doi.org/10.1016/j.ijhydene.2024.154475"
+  },
+  {
+    id: 2,
     title: "Alternative flow model of anisotropic porous media",
-    authors: "Shin, C.",
-    journal: "Journal of Natural Gas Science and Engineering (Q1, IF: 5.90, JCR: 11%)",
+    authors: "Shin, C. H.",
+    journal: "Journal of Natural Gas Science and Engineering (Q1)",
     year: 2022,
     category: "Fundamental Flow Physics",
     link: "https://doi.org/10.1016/j.jngse.2022.104829"
   },
   {
-    id: 2,
+    id: 3,
     title: "Application of the effective diameters of porous media to the non-Darcy flow analyses",
-    authors: "Shin, C.",
-    journal: "Scientific Reports (Q1, IF: 5.85, JCR: 10%)",
+    authors: "Shin, C. H.",
+    journal: "Scientific Reports (Q1)",
     year: 2022,
     category: "Fundamental Flow Physics",
     link: "https://doi.org/10.1038/s41598-022-08135-x"
   },
   {
-    id: 3,
+    id: 4,
     title: "Permeability variation analysis using the superficial diameter correlation with porosity change",
     authors: "Shin, C.",
-    journal: "Physics of Fluids (Q1, IF: 4.98, JCR: 4%)",
+    journal: "Physics of Fluids (Q1)",
     year: 2021,
     category: "Fundamental Flow Physics",
     link: "https://doi.org/10.1063/5.0046996"
   },
   {
-    id: 4,
+    id: 5,
     title: "Permeability variations by changes in geometrical conditions",
     authors: "Shin, C.",
-    journal: "Physics of Fluids (Q1, IF: 4.98, JCR: 4%)",
+    journal: "Physics of Fluids (Q1)",
     year: 2019,
     category: "Fundamental Flow Physics",
     link: "https://doi.org/10.1063/1.5072768"
-  },
-  {
-    id: 5,
-    title: "Tortuosity correction of Kozeny’s hydraulic diameter of a porous medium",
-    authors: "Shin, C.",
-    journal: "Physics of Fluids (Q1, IF: 4.98, JCR: 4%)",
-    year: 2017,
-    category: "Fundamental Flow Physics",
-    link: "https://doi.org/10.1063/1.4975560"
   },
   {
     id: 6,
@@ -63,50 +63,48 @@ const PUBLICATIONS = [
   },
   {
     id: 7,
-    title: "Permeability estimations and frictional flow features passing through porous media comprised of structured microbeads",
+    title: "Prediction of shale prospectivity from seismically-derived reservoir and completion qualities: Application to a shale-gas field, Horn River Basin, Canada",
+    authors: "Mo, C., Lee, G., Jeoung, T., Ko, G., Kim, K., Park, G., Shin, C.",
+    journal: "Journal of Applied Geophysics",
+    year: 2018,
+    category: "Engineering Projects",
+    link: "https://doi.org/10.1016/j.jappgeo.2018.02.016"
+  },
+  {
+    id: 8,
+    title: "Permeability estimations and frictional flow features passing through porous media",
     authors: "Shin, C.",
     journal: "AIP Advances",
     year: 2017,
     category: "Fundamental Flow Physics",
     link: "https://doi.org/10.1063/1.5017983"
   },
-  // AI & Digital Twin Applications
   {
-    id: 14,
-    title: "A numerical investigation of hydrogen blending effects on pressure regulators and compressors in natural gas pipeline networks",
-    authors: "Park, C. J., Ji, S. J., Lee, Y., Shin, C. H., Park, S. G.",
-    journal: "International Journal of Hydrogen Energy (Q1, IF: 10.19, JCR: 7%)",
-    year: 2026,
-    category: "AI & Digital Twin Applications",
-    link: "https://doi.org/10.1016/j.ijhydene.2026.154475"
-  },
-  {
-    id: 11,
-    title: "ANN-based selection of fracturing fluids in shale gas reservoirs",
+    id: 9,
+    title: "A comprehensive approach to select completion and fracturing fluid in shale gas reservoirs using the artificial neural network",
     authors: "Kim, C., Kim, Y., Shin, C., Lee, J.",
     journal: "Environmental Earth Sciences",
     year: 2017,
     category: "AI & Digital Twin Applications",
-    link: "#"
-  },
-  // Engineering Projects
-  {
-    id: 8,
-    title: "Optimal design of gas-lift systems considering fluid composition in subsea oil reservoirs",
-    authors: "Kim, Y., Shin, C., Lee, J.",
-    journal: "Journal of the Korean Institute of Gas",
-    year: 2018,
-    category: "Engineering Projects",
-    link: "#"
+    link: "https://doi.org/10.1007/s12665-017-6997-6"
   },
   {
     id: 10,
-    title: "Prediction of shale prospectivity from seismically-derived reservoir and completion qualities: Application to a shale-gas field, Horn River Basin, Canada",
-    authors: "Mo, C., Lee, G., Jeoung, T., et al., Shin, C.",
-    journal: "Journal of Applied Geophysics",
-    year: 2018,
+    title: "Pore structure characterization of shale using gas physisorption: Effect of chemical compositions",
+    authors: "Han, Y., Kwak, D., Choi, S., Shin, C., Lee, Y., Kim, H.",
+    journal: "Minerals",
+    year: 2017,
     category: "Engineering Projects",
-    link: "https://www.sciencedirect.com/science/article/pii/S092698511630444X"
+    link: "https://doi.org/10.3390/min7040066"
+  },
+  {
+    id: 11,
+    title: "Tortuosity correction of Kozeny’s hydraulic diameter of a porous medium",
+    authors: "Shin, C.",
+    journal: "Physics of Fluids (Q1)",
+    year: 2017,
+    category: "Fundamental Flow Physics",
+    link: "https://doi.org/10.1063/1.4975560"
   }
 ];
 

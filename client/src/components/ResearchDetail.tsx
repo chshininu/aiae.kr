@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Cpu, Wind, Target, Activity, Droplet, ShieldCheck, Map } from "lucide-react";
+import { ArrowRight, Cpu, Wind, Target, Activity, Droplet, ShieldCheck, Map, Code, BrainCircuit, MonitorSmartphone } from "lucide-react";
 import porousImg from "@/assets/images/theme-porous.png";
 import pipelineImg from "@/assets/images/theme-pipeline.png";
 import equipmentImg from "@/assets/images/theme-equipment.png";
@@ -7,6 +7,9 @@ import stationImg from "@/assets/images/theme-station.png";
 import offshoreImg from "@/assets/images/theme-offshore.png";
 import hydrogenImg from "@/assets/images/theme-hydrogen.png";
 import roadmapImg from "@/assets/images/theme-roadmap.png";
+import researchCfdImg from "@/assets/images/research-cfd-new.png";
+import researchPhmImg from "@/assets/images/research-phm.png";
+import researchEnergyAiImg from "@/assets/images/research-energy-ai.png";
 
 const PILLARS = [
   {
@@ -105,7 +108,7 @@ export function ResearchDetail() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-32 max-w-4xl"
+          className="mb-24 max-w-4xl"
         >
           <div className="inline-flex items-center gap-2 text-primary font-medium text-sm tracking-wider uppercase mb-4">
             <span className="w-8 h-px bg-primary"></span>
@@ -120,31 +123,87 @@ export function ResearchDetail() {
           <p className="text-lg text-muted-foreground/80 leading-relaxed mb-8 font-sans">
             Our philosophy is rooted in "Physics-Informed, AI-Accelerated Engineering." We believe that true operational excellence in complex energy systems—such as gas transmission networks, LNG/LH2 plants, and pressure regulation stations—requires a deep understanding of fluid dynamics and porous media. By combining high-fidelity multi-physics modeling with advanced AI diagnostics and digital twins, we transition industrial facilities from reactive maintenance to autonomous safety and predictive optimization.
           </p>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-8 border-t border-white/10">
-            <div className="bg-white/5 p-6 rounded-xl border border-white/10">
-              <div className="text-primary font-bold mb-3 flex items-start gap-2">
-                <span className="w-2 h-2 rounded-full bg-primary mt-1.5 shrink-0"></span>
-                <span className="leading-tight">Physics-based modeling</span>
-              </div>
-              <p className="text-sm text-white/70">Advanced CFD and complex porous media flow simulations.</p>
-            </div>
-            <div className="bg-white/5 p-6 rounded-xl border border-white/10">
-              <div className="text-primary font-bold mb-3 flex items-start gap-2">
-                <span className="w-2 h-2 rounded-full bg-primary mt-1.5 shrink-0"></span>
-                <span className="leading-tight">Data-driven AI techniques</span>
-              </div>
-              <p className="text-sm text-white/70">Machine learning applied to physical energy systems.</p>
-            </div>
-            <div className="bg-white/5 p-6 rounded-xl border border-white/10">
-              <div className="text-primary font-bold mb-3 flex items-start gap-2">
-                <span className="w-2 h-2 rounded-full bg-primary mt-1.5 shrink-0"></span>
-                <span className="leading-tight">Digital system implementation</span>
-              </div>
-              <p className="text-sm text-white/70">Real-time digital twins and predictive maintenance.</p>
-            </div>
-          </div>
         </motion.div>
+
+        {/* Core Methodologies Section */}
+        <div className="mb-32">
+          <div className="inline-flex items-center gap-2 text-primary font-medium text-sm tracking-wider uppercase mb-4">
+            <span className="w-8 h-px bg-primary"></span>
+            Core Methodologies
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-12">How We Build Systems</h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+              className="bg-gradient-to-b from-white/5 to-transparent rounded-2xl border border-white/10 overflow-hidden hover:border-primary/50 transition-colors group flex flex-col"
+            >
+              <div className="h-48 overflow-hidden relative">
+                <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent z-10 opacity-60"></div>
+                <img src={researchCfdImg} alt="CFD & Programming" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <div className="absolute top-4 left-4 z-20 w-10 h-10 rounded-xl bg-background/80 backdrop-blur-sm flex items-center justify-center border border-white/10 shadow-lg group-hover:bg-primary/20 transition-colors">
+                  <Code className="w-5 h-5 text-primary" />
+                </div>
+              </div>
+              <div className="p-8 flex-1 flex flex-col">
+                <h3 className="text-xl font-bold text-white mb-3">CFD & Programming</h3>
+                <p className="text-muted-foreground mb-6 flex-1">
+                  We go beyond commercial software. We write our own code to build high-fidelity Computational Fluid Dynamics (CFD) and 1D network simulations, analyzing the fundamental behaviors of non-Darcy flows and complex media.
+                </p>
+                <div className="text-xs font-semibold text-primary/80 uppercase tracking-wider">Physics-based Modeling</div>
+              </div>
+            </motion.div>
+
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+              className="bg-gradient-to-b from-white/5 to-transparent rounded-2xl border border-white/10 overflow-hidden hover:border-primary/50 transition-colors group flex flex-col"
+            >
+              <div className="h-48 overflow-hidden relative">
+                <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent z-10 opacity-60"></div>
+                <img src={researchPhmImg} alt="AI & ML Modeling" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <div className="absolute top-4 left-4 z-20 w-10 h-10 rounded-xl bg-background/80 backdrop-blur-sm flex items-center justify-center border border-white/10 shadow-lg group-hover:bg-primary/20 transition-colors">
+                  <BrainCircuit className="w-5 h-5 text-primary" />
+                </div>
+              </div>
+              <div className="p-8 flex-1 flex flex-col">
+                <h3 className="text-xl font-bold text-white mb-3">AI & ML Modeling</h3>
+                <p className="text-muted-foreground mb-6 flex-1">
+                  We integrate real operational data (SCADA) with deep learning architectures (LSTM, DNN, VAE, XAI) to forecast energy demand, diagnose faults in cryogenic equipment, and predict system anomalies before they occur.
+                </p>
+                <div className="text-xs font-semibold text-primary/80 uppercase tracking-wider">Data-driven Diagnostics</div>
+              </div>
+            </motion.div>
+
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.3 }}
+              className="bg-gradient-to-b from-white/5 to-transparent rounded-2xl border border-white/10 overflow-hidden hover:border-primary/50 transition-colors group flex flex-col"
+            >
+              <div className="h-48 overflow-hidden relative">
+                <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent z-10 opacity-60"></div>
+                <img src={researchEnergyAiImg} alt="Web & App Systems" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <div className="absolute top-4 left-4 z-20 w-10 h-10 rounded-xl bg-background/80 backdrop-blur-sm flex items-center justify-center border border-white/10 shadow-lg group-hover:bg-primary/20 transition-colors">
+                  <MonitorSmartphone className="w-5 h-5 text-primary" />
+                </div>
+              </div>
+              <div className="p-8 flex-1 flex flex-col">
+                <h3 className="text-xl font-bold text-white mb-3">Web & App Systems</h3>
+                <p className="text-muted-foreground mb-6 flex-1">
+                  We don't just stop at research papers. We deploy our models into real-world applications. We build full-stack digital twin platforms and VR-based operation systems for actual industrial operators to use.
+                </p>
+                <div className="text-xs font-semibold text-primary/80 uppercase tracking-wider">Digital Implementation</div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
 
         <div className="mb-24">
           <div className="inline-flex items-center gap-2 text-primary font-medium text-sm tracking-wider uppercase mb-4">
@@ -210,11 +269,6 @@ export function ResearchDetail() {
               className={`glass-panel rounded-2xl overflow-hidden group border border-white/5 hover:border-primary/30 transition-all duration-300 relative scroll-mt-24`}
             >
               <div className="h-64 overflow-hidden relative">
-                {pillar.highlight && (
-                  <div className="absolute top-4 right-4 z-20 bg-primary text-primary-foreground text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide shadow-lg">
-                    {pillar.highlight}
-                  </div>
-                )}
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent z-10"></div>
                 <img src={pillar.image} alt={pillar.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
               </div>
